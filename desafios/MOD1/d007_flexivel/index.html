@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Fleixiveis</title>
+</head>
+<body>
+    <h1>Imagens Fleixiveis</h1>
+    <p>Experimente aumentar ou diminuir o tamnho da tela e veja o que acontece</p>
+    <picture>
+        <!--Imagem que sera mostrada se a imagem media não for a melhor-->
+        <source media="(max-width:750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <!--Imagem que sera mostrada se a imagem grande não for a melhor-->
+        <source media="(max-width:1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <!--Imagem padrão-->
+        <img src="imagens/paisagem-g.png" alt="garnde">
+    </picture>
+    
+</body>
+</html>

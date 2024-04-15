@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clasees em CSS</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 250px;
+           
+        }
+        div > p{
+            display: none;
+        }
+        
+      
+      div:hover > p{
+            color: blue;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estou estudando sobre as Pseudo-clasees</h1>
+    <div>
+        Passe o mouse Aqui
+        <p>Estou escondido</p>
+    </div>
+    
+</body>
+</html>

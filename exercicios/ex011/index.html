@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias html5</title>
+</head>
+<body>
+    <h1>Imagnes dinâmicas</h1>
+    <p>Vamos tentar abrir este site m varios dispositivos com tamanho de telas diferentes</p>
+
+    <picture>
+    <!--se a largura maxima for até ou menor que 750pixels ele vai mostar a imagem peuqena-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <!--Se a largura maxima for igual ou menor que 1050pixels ele vai mostrar a imagem media-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <!--Caso nemhuma das condições acima for atendida ela vai mostrar a imagem padrão, a grande-->
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>   
+    <h1>Trabalhando com Áudios</h1>
+    <p>Hoje aprendi como trabalhar com áudio e você pode ouvir a musica que eu escolhi logo abaixo:</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/I Wish I Knew - Otis McDonald.mp3" type="audio/mpeg">
+        <source src="media/I Wish I Knew - Otis McDonald.ogg" type="audio/ogg">
+        <p>O seu navegador nã suporta áudio, você pode fazer o <a href="media/Happy Mistake - RKVC.mp3" download="Happy Mistake - RKVC.mp3">download aqui</a></p>
+    </audio>
+</body>
+</html>

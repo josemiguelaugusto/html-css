@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clasees em CSS</title>
+    <style>
+      div{
+        color: red;
+        text-align: center;
+        display: inline-block;
+        background-color: yellow;
+        width: 250px;
+        height: 200px;
+        border: 2px solid darkcyan;
+      }
+      div:hover{
+        background-color: black;
+        color: blue;
+      }
+      .test > p{
+        display: none;
+      }
+      .test:hover > p{
+        text-align: center;
+        display: block;
+        width: auto;
+      }
+    </style>
+     
+</head>
+<body>
+    <h1>Testando as Pseudo-clasees</h1>
+    <div class="test">Eu 
+        <p>Sou muito feliz</p>
+    </div>
+    <div class="test">Eu 
+        <p>Sou muito saúdavel</p>
+    </div>
+    <div class="test">Eu 
+        <p>Sou muito sábio</p></div>
+</body>
+</html>
