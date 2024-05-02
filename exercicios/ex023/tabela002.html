@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightslategray;
+        }
+        th{
+            background-color: rgb(98, 97, 97);
+            color: rgb(255, 254, 254);
+            border: solid 2px black;
+            padding: 5px;
+        }
+
+        td{
+            border: solid 2px black;
+            padding: 5px;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">País</th>
+                <th scope="col">Capital</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nigeria</td>
+                <td class="numero">218.625.385	</td>
+            </tr>
+            <tr>
+                <td>Etiópia</td>
+                <td class="numero">121.922.416</td>
+            </tr>
+            <tr>
+                <td>Egito</td>
+                <td class="numero">106.981.048</td>
+            </tr>
+            <tr>
+                <td>RDC</td>
+                <td class="numero">96.312.504</td>
+            </tr>
+            <tr>
+                <td>Tanzânia</td>
+                <td class="numero">63.931.876</td>
+            </tr>
+            <tr>
+                <td>África do Sul</td>
+                <td class="numero">61.081.076</td>
+            </tr>
+            <tr>
+                <td>Quênia</td>
+                <td class="numero">56.645.588</td>
+            </tr>
+            <tr>
+                <td>Uganda</td>
+                <td class="numero">49.333.704</td>
+            </tr>
+        </tbody>
+</table>
+</body>
+</html>
